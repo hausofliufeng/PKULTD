@@ -10,14 +10,14 @@ from selenium.webdriver.common.action_chains import ActionChains
 driver = webdriver.Chrome()
 
 #论文链接
-thsis_url="https://thesis.lib.pku.edu.cn/docinfo.action?id1=56b030af6d7a0e566009fa151cc9a83d&id2=KhhPjCdEGOQ%253D"
+thsis_url="https://thesis.lib.pku.edu.cn/docinfo.action?id1=6253242fa7b50a1e05bceb7008db2855&id2=4JrF8NUQsEQ%253D"
 driver.get(thsis_url)
 driver.refresh()
 time.sleep(2)
 lookbut = driver.find_element_by_link_text('查看全文')
 lookbut.click()
 handles = driver.window_handles
-driver.switch_to_window(handles[1])
+driver.switch_to.window(handles[1])
 time.sleep(2)
 #获取总页数
 tpage=driver.find_element_by_css_selector('span#totalPages.toolbar-page-num')
