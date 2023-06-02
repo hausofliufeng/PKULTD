@@ -18,7 +18,7 @@ driver = webdriver.Chrome("./chromedriver")
 time.sleep(30)
 
 #论文链接
-thsis_url="https://drm.lib.pku.edu.cn/pdfindex.jsp?fid=d349749648fb6cffc255fd00f09eac56"
+thsis_url="https://drm.lib.pku.edu.cn/pdfindex.jsp?fid=1148f58180d6e5ff7b28649ef30effa3"
 driver.get(thsis_url)
 driver.refresh()
 time.sleep(2)
